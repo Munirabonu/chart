@@ -1,0 +1,113 @@
+.openChart{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20%;
+    background-color:  #261e4b;
+    border-radius: 20px;
+    padding: 10px; 
+    position: relative;   
+    transition-delay: 5s;
+    .bar {
+        width: 210px;
+        height: 250px;
+        h3{
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+        }
+    }
+    .ant-progress-inner {
+        margin-top: 20px;
+        &:hover{
+            svg{
+                padding: 10px;
+            }
+        }    
+    }
+    .textbar {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+        h2,h6,p{
+            color: white;
+            margin: 0;
+        }
+        h6,p{
+            font-size: 12px;
+        }
+    }
+    .icon{
+        position: absolute;
+        right: 0px;
+        margin: 20px;
+        font-size: 25px;
+        color: #08c;
+        float: right;
+        cursor: pointer;
+    }
+    
+}
+@media (min-width:900px) {
+    .openChart {
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        grid-gap: 20px;
+        text-align: center;
+        .ant-progress-inner {
+            margin-top: 20px;
+            &:hover{
+                svg{
+                    padding: 10px;
+                }
+            } 
+        } 
+    }
+}
+@media (min-width:1000px) {
+    .openChart {
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        grid-gap: 20px;
+        text-align: center;
+        .ant-progress-inner {
+            // margin-top: 20px;
+            &:hover{
+                svg{
+                    padding: 10px;
+                }
+            } 
+        } 
+    }
+} 
+
+@media (min-width:768px) {
+    .openChart {
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        grid-gap: 20px;
+        text-align: center;
+        .ant-progress-inner {
+            margin-top: 20px;
+            &:hover{
+                svg{
+                    padding: 10px;
+                }
+            } 
+        } 
+    }
+}
+@media (max-width:510px) {
+    .openChart {
+        display: block;
+        .bar {
+            margin: auto;
+        }
+        .ant-progress-inner {
+            margin-top: 20px;
+            &:hover{
+                svg{
+                    padding: 10px;
+                }
+            } 
+        }
+    } 
+}

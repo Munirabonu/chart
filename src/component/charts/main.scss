@@ -1,0 +1,50 @@
+.AdminCharts{
+    display: grid;
+    grid-template-columns: 66.6% 33.3%;
+    justify-content: center;
+    text-align: center; 
+    grid-column-gap: 16px;  
+
+    .chart{
+        background-color:  #261e4b;
+        border-radius: 20px;
+        padding: 20px 0;
+
+        .button_chart{
+            color: rgba(134, 132, 132, 0.733);
+            font-size: 30px;
+            text-align: left;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+@media (max-width:769px) {
+    .AdminCharts{
+        display: unset;
+        .text p{
+            text-align:left;
+        }
+        .recharts-surface{
+            margin: 0 60px;
+            width: 272px;
+        }
+
+    }  
+    .openChart {
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        grid-gap: 20px;
+        text-align: center;
+    } 
+}
+@media (max-width:510px) {
+    .openChart {
+        display: block;
+        .bar {
+            margin: auto;
+        }
+    } 
+}

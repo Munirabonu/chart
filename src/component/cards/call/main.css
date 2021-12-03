@@ -1,0 +1,16 @@
+.call {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    height: 100%;
+}
+h5{
+    text-align: center;
+    margin: 0;
+}
+p {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 20px;
+    margin: 0;
+}

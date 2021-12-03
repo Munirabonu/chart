@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+
+import Accaunt from './component/cards/account/Accaunt';
+import Call from './component/cards/call/Call';
+import Contact from './component/cards/contact/Contact';
+import Review from './component/cards/review/Review';
+import Videos from './component/cards/video/Videos';
+import AdminCharts from './component/charts/AdminCharts';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AdminCharts />
+      <div className='row'>
+        <div className='col'>
+          <Review />
+          <div className='row_2'>
+            <div className='col'><Call /></div>
+            <div className='col'><Accaunt /></div>
+          </div>
+        </div>
+        <div className='col'>
+          <Contact />
+        </div>
+        <div className='col'>
+          <Videos />
+        </div>
+      </div>
     </div>
   );
 }
